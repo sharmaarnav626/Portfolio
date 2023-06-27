@@ -1,6 +1,7 @@
 @media screen and (max-width: 550px) {
     .banner{
         flex-direction: column;
+        gap: 50px;
     }
     .navbar{
         flex-direction: column;
@@ -15,9 +16,9 @@
     .navbar a{
 font-size: 1em;
     }
-    .banner img{
-        width: 350px;
-    }
+    /* .banner img{
+        width: 300px;
+    } */
     .r-banner h1{
 font-size: 1.8em;
     }
@@ -33,6 +34,62 @@ font-size: 1.8em;
 
     }
     .r-education img{
-        width: 350px;
+        width: 300px;
     }
+   
+}
+@media screen and (max-width: 900px){
+    .projects{
+        flex-direction: column;
+
+    }
+    .projects img{
+        width: 250px;
+    }
+}
+@media screen and (max-width:800px){
+    .banner h1 {
+        font-size: 1.8em;
+    }
+    .banner h3{
+        font-size: 1.5em;
+    }
+    .banner img{
+        width: 300px;
+    }
+}
+@media(max-width:768px){
+.hamburger{
+    display: block;
+}
+.hamburger .active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger .active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger .active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.nav-item{
+    margin: 16px 0;
+}
+.nav-menu.active{
+left: 0;
+
+}
+.nav-menu li{
+    color: white;
+}
 }
